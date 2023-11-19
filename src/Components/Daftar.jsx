@@ -89,12 +89,6 @@ const Daftar = () => {
                 className="w-full p-2 shadow-md border rounded-2xl outline-[#3c87ca]"
               />
             </div>
-            <a
-              href="/Lupa"
-              className="font-body py-2 text-[#3c87ca] float-right"
-            >
-              Lupa Password?
-            </a>
             <button
               type="button"
               className="w-full p-2 font-body my-3 bg-[#3c87ca] text-white font-semibold rounded-full hover:bg-sky-800"

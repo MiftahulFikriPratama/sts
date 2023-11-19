@@ -13,6 +13,7 @@ import Notfound from './Components/Notfound';
 const App = () => {
   return (
     <div>
+      <Navbar/>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

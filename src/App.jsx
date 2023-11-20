@@ -9,12 +9,13 @@ import Login from './Components/Login';
 import Daftar from './Components/Daftar';
 import Notfound from './Components/Notfound';
 import { Footer } from './Components/Footer';
+import DetailWisata from './Components/DetailWisata';
 
 
 const App = () => {
   return (
     <div>
-      <Footer/>
+      <Navbar/>
       <Router>
         <Routes>
           <Route path="/.." element={<Home />} />
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/daftar" element={<Daftar />} />
           <Route path='/footer' element={<Footer />} />
+          <Route path='/DetailWisata' element={<DetailWisata/>} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>

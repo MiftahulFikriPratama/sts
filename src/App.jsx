@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar';
-import Home from "./Components/Home";
 import About  from "./Components/About";
 import Kontak from "./Components/Kontak";
 import FAQ from "./Components/FAQ";
@@ -16,6 +15,7 @@ import DetailWisata4 from './Components/DetailWisata4';
 import DetailWisata5 from './Components/DetailWisata5';
 import DetailWisata6 from './Components/DetailWisata6';
 import Carousel from './Components/Carousel';
+import Home from './Components/Home';
 
 
 const App = () => {
@@ -38,6 +38,7 @@ const App = () => {
           <Route path='/DetailWisata6' element={<DetailWisata6/>} />
           <Route path="*" element={<Notfound />} />
           <Route path='/carousel' element={<Carousel/>} />
+          <Route path='/Home' element={<Home/>} />
         </Routes>
       </Router>
     </div>

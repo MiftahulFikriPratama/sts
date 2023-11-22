@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <img className="w-1/3 absolute top-0 right-0" src={element1} alt="" />
-      <img className="absolute top-2 left-5" src={logo} alt="" />
+      <img className="absolute w-28 top-2 left-5" src={logo} alt="" />
       <img className="w-1/3 absolute bottom-0 right-0" src={element2} alt="" />
 
       <div className="flex gap-x-80 items-center">

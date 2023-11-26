@@ -16,6 +16,8 @@ import DetailWisata5 from './Components/DetailWisata5';
 import DetailWisata6 from './Components/DetailWisata6';
 import Carousel from './Components/Carousel';
 import Home from './Components/Home';
+import Landingpage from './Components/Landingpage'
+import NonWisata from './Components/NonWisata';
 
 
 const App = () => {
@@ -23,7 +25,7 @@ const App = () => {
     <div>
       <Router>
         <Routes>
-          <Route path="/.." element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/FAQ" element={<FAQ />} />
@@ -38,7 +40,8 @@ const App = () => {
           <Route path='/DetailWisata6' element={<DetailWisata6/>} />
           <Route path="*" element={<Notfound />} />
           <Route path='/carousel' element={<Carousel/>} />
-          <Route path='/Home' element={<Home/>} />
+          <Route path='/landingpage' element={<Landingpage/>} />
+          <Route path='/Nonwisata' element={<NonWisata />} />
         </Routes>
       </Router>
     </div>

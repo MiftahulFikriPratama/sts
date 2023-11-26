@@ -11,8 +11,8 @@ import { FiFacebook } from "react-icons/fi";
 export const Footer = () => {
   return (
     <footer className='h-52 flex justify-center w-full bg-white relative bottom-0'>
-        <img className='absolute bottom-0 right-0' src={element1} alt="" />
-        <img className='absolute bottom-0 left-0' src={element2} alt="" />
+        <img className='absolute w-1/4 bottom-0 right-0' src={element1} alt="" />
+        <img className='absolute w-1/4 bottom-0 left-0' src={element2} alt="" />
         <img className=' absolute my-5 w-24 h-24' src={logo} alt="" />
         <p className='text-black font-semibold font-body items-center justify-center absolute mt-28'>© 2023 WebCrafters</p>
         <div className='flex flex-grow gap-2 text-xl justify-center mt-40 '>

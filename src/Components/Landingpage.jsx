@@ -7,17 +7,16 @@ import KEDUA from "../assets/image/candiprambanan.png"
 import KETIGA from "../assets/image/keratonjogja.png"
 import PANTAI from "../assets/image/pantai.png"
 import SAWAH from "../assets/image/TepiSawahCoffeeEatery.png"
-import Navbar1 from './Navbar1'
+import Navbar from './Navbar'
 import { Footer } from './Footer'
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
 
 
-
 const Home = () => {
   return (
     <>
-    <Navbar1/>
+    <Navbar/>
     {/* section1  */}
 
    
@@ -38,7 +37,7 @@ const Home = () => {
 {/* section3  */}
 
 <section>
-<div className="teks3">
+  <div className="teks3">
   <h1 className='font-body'>Rekomendasi Bulan Ini</h1>
   </div>
   <div className="container">
@@ -70,7 +69,7 @@ const Home = () => {
 <section>
 <button className="combined-button">
     <div className="additional-box">-</div>
-    <span id="non-wisata">Non-Wisata</span>
+    <a href="/Nonwisata"></a><span id="non-wisata">Non-Wisata</span>
     <p className="batas">|</p>
     <span id="wisata">Wisata</span>
 </button>

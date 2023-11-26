@@ -11,7 +11,7 @@ const Navbar = () => {
           <img className='w-20 h-20 ' src={logo} alt="" />
         </div>
         <div className= 'flex flex-grow  justify-end items-center  gap-6  pr-10 '>
-        <a className='font-body text-black hover:text-[#3c87ca]' href='/'>Beranda</a>
+        <a className='font-body text-black hover:text-[#3c87ca]' href='/Landingpage'>Beranda</a>
         <a className='font-body text-black hover:text-[#3c87ca]' href='/kontak'>Kontak</a>
         <a className='font-body text-black hover:text-[#3c87ca]' href='/about'>Tentang Kami</a>
         <a className='font-body text-black hover:text-[#3c87ca]' href='/FAQ'>FAQ</a>

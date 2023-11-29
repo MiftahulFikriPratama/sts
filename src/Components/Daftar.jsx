@@ -10,7 +10,7 @@ const Daftar = () => {
       <img className="absolute w-28 top-2 left-5" src={logo} alt="" />
       <img className="w-1/3 absolute bottom-0 right-0" src={element2} alt="" />
 
-      <div className="flex gap-x-80 items-center">
+      <div className="flex gap-x-64 items-center">
         <div className="w-96 ">
           <h1 className="text-[#3c87ca] mt-32 font-body text-center font-bold text-3xl">
             Daftar Sekarang
@@ -30,8 +30,8 @@ const Daftar = () => {
                 type="text"
                 id="nama"
                 placeholder="Masukkan Nama"
-                className="w-full p-5  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500"
+                className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
+                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -45,8 +45,8 @@ const Daftar = () => {
                 type="text"
                 id="usernama"
                 placeholder="Masukkan Username"
-                className="w-full p-5  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500"
+                className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
+                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -60,8 +60,8 @@ const Daftar = () => {
                 type="text"
                 id="handphone"
                 placeholder="Masukkan Nomor"
-                className="w-full p-5  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500"
+                className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
+                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -75,8 +75,8 @@ const Daftar = () => {
                 type="email"
                 id="email"
                 placeholder="Masukkan email"
-                className="w-full p-5  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500"
+                className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
+                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -90,8 +90,8 @@ const Daftar = () => {
                 type="password"
                 id="password"
                 placeholder="Password"
-                className="w-full p-5  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500"
+                className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
+                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
               />
             </div>
             <a href="Landingpage">
@@ -113,7 +113,7 @@ const Daftar = () => {
         </div>
         <div>
           <h1 className="text-[#3c87ca] font-body text-center font-bold text-5xl">
-            Selamat Datang <br />
+            Siap Menjelajah? <br />
           </h1>
           <p className="text-black font-body text-center font-semibold text-lg">
             <br />

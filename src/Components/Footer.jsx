@@ -14,7 +14,7 @@ export const Footer = () => {
         <img className='absolute w-1/4 bottom-0 right-0' src={element1} alt="" />
         <img className='absolute w-1/4 bottom-0 left-0' src={element2} alt="" />
         <img className=' absolute my-5 w-24 h-24' src={logo} alt="" />
-        <p className='text-black font-semibold font-body items-center justify-center absolute mt-28'>© 2023 WebCrafters</p>
+        <p className='text-black font-semibold font-body items-center justify-center absolute mt-28'>© 2023 WebCrafters. All Rights Reserved</p>
         <div className='flex flex-grow gap-2 text-xl justify-center mt-40 '>
           <a className='hover:text-[#3c87ca]' href="/"><FaInstagram /></a>
           <a className='hover:text-[#3c87ca]' href="/"><FiFacebook /></a>

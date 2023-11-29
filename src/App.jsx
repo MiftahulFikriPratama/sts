@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './Components/Navbar';
+import Navbar2 from './Components/Navbar2';
+import Navbar1 from './Components/Navbar1';
 import About  from "./Components/About";
 import Kontak from "./Components/Kontak";
 import FAQ from "./Components/FAQ";
@@ -42,6 +43,8 @@ const App = () => {
           <Route path='/carousel' element={<Carousel/>} />
           <Route path='/landingpage' element={<Landingpage/>} />
           <Route path='/Nonwisata' element={<NonWisata />} />
+          <Route path='/Navbar2' element={<Navbar2 />} />
+          <Route path='/Navbar1' element={<Navbar1 />} />
         </Routes>
       </Router>
     </div>

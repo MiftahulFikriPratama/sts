@@ -72,7 +72,7 @@ const Home = () => {
               </p>
             </div>
             <a
-              href="#"
+              href="/DetailWisata2"
               className="text-3xl absolute bottom-0 right-0 pr-5 pb-5 hover:text-[#3c87ca] "
             >
               <BsArrowRightCircleFill />
@@ -85,7 +85,7 @@ const Home = () => {
             />
             <div className="absolute px-5 top-44">
               <h1 className="text-xl font-bold font-body ">
-                Kraton Yogyakarta
+                Keraton Yogyakarta
               </h1>
               <p className="text-base font-body">
                 Keelokan arsitektur Jawa, kehijauan taman, dan pesona sejarah
@@ -94,7 +94,7 @@ const Home = () => {
               </p>
             </div>
             <a
-              href="#"
+              href="/DetailWisata3"
               className="text-3xl absolute bottom-0 right-0 pr-5 pb-5 hover:text-[#3c87ca] "
             >
               <BsArrowRightCircleFill />
@@ -114,7 +114,7 @@ const Home = () => {
                 Wisata
               </button>
             </a>
-            <a href="NonWisata">
+            <a href="/NonWisata">
               <button class="px-4 py-1  shadow-lg rounded-e-full bg-white hover:bg-[#3c87ca] hover:text-white text-black">
                 Non-Wisata
               </button>
@@ -145,7 +145,7 @@ const Home = () => {
                 Keindahan pasir putih, ombak menarik, dan nuansa mistis.
                 Aktivitas seru dan budaya bersatu dalam destinasi singkat.
               </p>
-              <a href="">
+              <a href="/DetailWisata1">
                 <button className="w-full p-1 mt-10 rounded-lg font-body text-white hover:bg-[#3170a7] bg-[#3c87ca]">
                   Lebih Lanjut
                 </button>
@@ -162,7 +162,7 @@ const Home = () => {
                 Keindahan Hindu abad ke-9 di Yogyakarta. Siluet megah dan relief
                 ukiran menciptakan potret budaya Indonesia yang memukau.
               </p>
-              <a href="">
+              <a href="/DetailWisata2">
                 <button className="w-full p-1 mt-10 rounded-lg font-body text-white hover:bg-[#3170a7] bg-[#3c87ca]">
                   Lebih Lanjut
                 </button>
@@ -179,7 +179,7 @@ const Home = () => {
                 Kafe ini tepat berada di tepi sawah. Dengan bangunan utama
                 berbentuk joglo, kafe ini mengusung konsep tradisional Jawa.
               </p>
-              <a href="">
+              <a href="/DetailWisata4">
                 <button className="w-full p-1 mt-10 rounded-lg font-body text-white hover:bg-[#3170a7] bg-[#3c87ca]">
                   Lebih Lanjut
                 </button>

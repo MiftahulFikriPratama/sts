@@ -7,7 +7,6 @@ import { Footer } from './Footer';
 const About = () => {
   return (
     <>
-    
     <Navbar/>
       <div className=" flex items-center  pt-10 justify-center h-auto bg-[#FAFAFA]">
         <div className="w-4/5 h-auto mb-10 flex flex-wrap bg-white rounded-xl shadow-lg">

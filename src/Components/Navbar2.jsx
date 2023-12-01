@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import logo from "../assets/Logo.png";
 import { FaRegUserCircle, FaRegUser } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
@@ -6,51 +7,51 @@ import { FaRegStar } from "react-icons/fa";
 import { GrHistory } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
 
-
 const Navbar2 = () => {
+  const location = useLocation();
+
+  const menuItems = [
+    { path: '/Profil', icon: <FaRegUser />, label: 'Profil' },
+    { path: '/Like', icon: <GrFavorite />, label: 'Suka' },
+    { path: '/Transaksi', icon: <GrHistory />, label: 'Transaksi' },
+    { path: '/', icon: <BiLogOut />, label: 'Keluar' },
+  ];
+
+  const navigationItems = [
+    { path: '/Landingpage', label: 'Beranda' },
+    { path: '/kontak', label: 'Kontak' },
+    { path: '/about', label: 'Tentang Kami' },
+    { path: '/FAQ', label: 'FAQ' },
+    { path: '/Pemandu', label: 'Pemandu Wisata' },
+  ];
+
   return (
     <>
-      <div className='fixed  top-0 left-0 w-full h-20 flex bg-white z-[1000]'>
+      <div className='fixed top-0 left-0 w-full h-20 flex bg-white z-[1000]'>
         <div className='w-60 h-screen bg-white'>
           <div className='pl-10 pt-1 items-center'>
             <img className='w-20 h-20' src={logo} alt="" />
           </div>
           <div className='w-full mt-10 flex flex-col items-center'>
-            {/* Sidebar links */}
-            <a href="#">
-              <div className='w-52 mb-2 flex rounded-md shadow-md py-2 px-5 bg-[#b1dbff] hover:bg-[#3c87ca] hover:text-white'>
-                <p className='flex gap-4 text-base font-body font-bold justify-center items-center'><FaRegUser />Profil</p>
-              </div>
-            </a>
-            <a href="#">
-              <div className='w-52 mb-2 flex rounded-md shadow-md py-2 px-5 bg-[#b1dbff] hover:bg-[#3c87ca] hover:text-white'>
-                <p className='flex gap-4 text-base font-body font-bold justify-center items-center'><GrFavorite />Suka</p>
-              </div>
-            </a>
-            <a href="#">
-              <div className='w-52 mb-2 flex rounded-md shadow-md py-2 px-5 bg-[#b1dbff] hover:bg-[#3c87ca] hover:text-white'>
-                <p className='flex gap-4 text-base font-body font-bold justify-center items-center'><FaRegStar />Ulasan</p>
-              </div>
-            </a>
-            <a href="#">
-              <div className='w-52 mb-2 flex rounded-md shadow-md py-2 px-5 bg-[#b1dbff] hover:bg-[#3c87ca] hover:text-white'>
-                <p className='flex gap-4 text-base font-body font-bold justify-center items-center'><GrHistory />Riwayat</p>
-              </div>
-            </a>
-            <a href="/">
-              <div className='w-52 mt-48 flex rounded-md shadow-md py-2 px-5 bg-[#b1dbff] hover:bg-[#3c87ca] hover:text-white'>
-                <p className='flex gap-4 text-base font-body font-bold justify-center items-center'><BiLogOut />Keluar</p>
-              </div>
-            </a>
+            {menuItems.map((menuItem, index) => (
+              <Link to={menuItem.path} key={index}>
+                <div className={`w-52 mb-2 flex rounded-md py-2 px-5 ${location.pathname === menuItem.path ? 'bg-[#3c87ca] text-white' : 'bg-transparent hover:bg-[#3c87ca] hover:text-white'}`}>
+                  <p className={`flex gap-4 text-base font-body font-bold justify-center items-center ${location.pathname === menuItem.path ? 'text-white' : 'text-black'}`}>
+                    {menuItem.icon}
+                    {menuItem.label}
+                  </p>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
         <div className='flex flex-grow justify-end items-center gap-6 pr-10'>
-          <a className='font-body text-black hover:text-[#3c87ca]' href='/Landingpage'>Beranda</a>
-          <a className='font-body text-black hover:text-[#3c87ca]' href='/kontak'>Kontak</a>
-          <a className='font-body text-black hover:text-[#3c87ca]' href='/about'>Tentang Kami</a>
-          <a className='font-body text-black hover:text-[#3c87ca]' href='/FAQ'>FAQ</a>
-          <a className='font-body text-black hover:text-[#3c87ca]' href='/Pemandu'>Pemandu Wisata</a>
-          <a className='text-4xl hover:text-[#3c87ca]' href="/profil"><FaRegUserCircle /> </a>
+          {navigationItems.map((navItem, index) => (
+            <Link to={navItem.path} key={index} className={`font-body ${location.pathname === navItem.path ? 'text-[#3c87ca]' : 'text-black'} hover:text-[#3c87ca]`}>
+              {navItem.label}
+            </Link>
+          ))}
+          <Link to="/profil" className='text-4xl hover:text-[#3c87ca]'><FaRegUserCircle /></Link>
         </div>
       </div>
 

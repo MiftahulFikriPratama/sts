@@ -19,6 +19,8 @@ import Carousel from './Components/Carousel';
 import Home from './Components/Home';
 import Landingpage from './Components/Landingpage'
 import NonWisata from './Components/NonWisata';
+import Profil from './Components/Profil';
+import Like from './Components/Like';
 
 
 const App = () => {
@@ -45,6 +47,8 @@ const App = () => {
           <Route path='/Nonwisata' element={<NonWisata />} />
           <Route path='/Navbar2' element={<Navbar2 />} />
           <Route path='/Navbar1' element={<Navbar1 />} />
+          <Route path='/Profil' element={<Profil/>} />
+          <Route path='/Like' element={<Like/>}/>
         </Routes>
       </Router>
     </div>

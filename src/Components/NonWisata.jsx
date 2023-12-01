@@ -32,14 +32,14 @@ const Nonwisata = () => {
               </button>
             </a>
           </div>
-          <div className=" mt-10 flex right-0 mr-24 absolute rounded-2xl border-2 border-[#3c87ca]">
+          <div className=" mt-10 flex right-0 mr-24 absolute rounded-2xl border-2 ">
             <input
-              className="pl-5 border shadow-md border-slate-300 rounded-2xl text-md placeholder-slate-400"
+              className="pl-5 p-1 w-64  shadow-md outline-[#3c87ca]  rounded-2xl text-md placeholder-slate-400"
               type="text"
               placeholder="Search..."
             />
             <a
-              className="absolute text-2xl p-1.5 ml-56 hover:text-[#3c87ca]"
+              className="absolute text-2xl pt-1 ml-56 hover:text-[#3c87ca]"
               href="#"
             >
               <IoSearch />
@@ -57,7 +57,7 @@ const Nonwisata = () => {
                 Kafe ini tepat berada di tepi sawah. Dengan bangunan utama
                 berbentuk joglo, kafe ini mengusung konsep tradisional Jawa.
               </p>
-              <a href="">
+              <a href="/DetailWisata4">
                 <button className="w-full p-1 mt-10 rounded-lg font-body text-white hover:bg-[#3170a7] bg-[#3c87ca]">
                   Lebih Lanjut
                 </button>
@@ -73,7 +73,7 @@ const Nonwisata = () => {
               <p className="text-base  font-body">
               Memiliki konsep suasana alam, cafe ini memberikan kamu kesempatan untuk memanjakan mata dengan melihat hamparan sawah hijau di sekelilingnya. 
               </p>
-              <a href="">
+              <a href="/DetailWisata5">
                 <button className="w-full p-1 mt-10 rounded-lg font-body text-white hover:bg-[#3170a7] bg-[#3c87ca]">
                   Lebih Lanjut
                 </button>
@@ -91,7 +91,7 @@ const Nonwisata = () => {
                Bangunan yang terbuka, dan dirancang 
                sedemikian rupa sehingga tampak luas.
               </p>
-              <a href="">
+              <a href="/DetailWisata6">
                 <button className="w-full p-1 mt-10 rounded-lg font-body text-white hover:bg-[#3170a7] bg-[#3c87ca]">
                   Lebih Lanjut
                 </button>

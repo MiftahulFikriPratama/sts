@@ -31,7 +31,7 @@ const Daftar = () => {
                 id="nama"
                 placeholder="Masukkan Nama"
                 className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
+                focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -46,7 +46,7 @@ const Daftar = () => {
                 id="usernama"
                 placeholder="Masukkan Username"
                 className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
+                focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -61,7 +61,7 @@ const Daftar = () => {
                 id="handphone"
                 placeholder="Masukkan Nomor"
                 className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
+                focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -76,7 +76,7 @@ const Daftar = () => {
                 id="email"
                 placeholder="Masukkan email"
                 className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
+                focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca]"
               />
             </div>
             <div className="mb-4">
@@ -91,7 +91,7 @@ const Daftar = () => {
                 id="password"
                 placeholder="Password"
                 className="w-full p-3  border border-slate-300 rounded-2xl text-md shadow-md placeholder-slate-400
-                focus:outline-none focus:border-[#3c87ca] focus:ring-2 focus:ring-[#3c87ca]"
+                focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca]"
               />
             </div>
             <a href="Landingpage">

@@ -21,7 +21,13 @@ import Landingpage from './Components/Landingpage'
 import NonWisata from './Components/NonWisata';
 import Profil from './Components/Profil';
 import Like from './Components/Like';
-
+import PaketWisata from './Components/PaketWisata';
+import DetailPaket from './Components/DetailPaket';
+import Pemesanan from './Components/Pemesanan';
+import Pembayaran from './Components/Pembayaran';
+import Konfirmasi from './Components/Konfirmasi';
+import Transaksi from './Components/Transaksi';
+import DetailTransaksi from './Components/DetailTransaksi';
 
 const App = () => {
   return (
@@ -49,6 +55,13 @@ const App = () => {
           <Route path='/Navbar1' element={<Navbar1 />} />
           <Route path='/Profil' element={<Profil/>} />
           <Route path='/Like' element={<Like/>}/>
+          <Route path='/PaketWisata' element={<PaketWisata/>}/>
+          <Route path='/DetailPaket' element={<DetailPaket/>}/>
+          <Route path='/Pemesanan' element={<Pemesanan/>} />
+          <Route path='/Pembayaran' element={<Pembayaran/>}/>
+          <Route path='/Konfirmasi' element={<Konfirmasi/>}/>
+          <Route path='/Transaksi' element={<Transaksi/>} />
+          <Route path='/DetailTransaksi' element={<DetailTransaksi/>} />
         </Routes>
       </Router>
     </div>

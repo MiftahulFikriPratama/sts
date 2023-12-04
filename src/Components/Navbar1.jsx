@@ -10,8 +10,7 @@ const Navbar = () => {
     { path: '/', label: 'Beranda' },
     { path: '/kontak', label: 'Kontak' },
     { path: '/about', label: 'Tentang Kami' },
-    { path: '/FAQ', label: 'FAQ' },
-    { path: '/Login', label: 'Pemandu Wisata' },
+    { path: '/Login', label: 'Paket Wisata' },
   ];
   return (
     <>

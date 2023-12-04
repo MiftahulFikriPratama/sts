@@ -17,14 +17,14 @@ const Kontak = () => {
         </div>
         <div className='w-1/2 mt-10 flex flex-col  items-center'>
           <form className='w-4/5'>
-            <input type="text" id='nama' placeholder='Nama' className='w-full py-1 px-3 mb-3 rounded-lg border-2 border-[#3c87ca] outline-none font-body' />
-            <input type="email" id='email' placeholder='Email' className='w-full py-1 px-3 mb-3 rounded-lg border-2 border-[#3c87ca] outline-none font-body' />
-            <input type="tel" id='telepon' placeholder='No Telepon' className='w-full py-1 px-3 mb-3 rounded-lg border-2 border-[#3c87ca] outline-none font-body' />
-            <input type="text" id='perusahaan' placeholder='Perusahaan (Opsional)' className='w-full py-1 px-3 mb-3 rounded-lg border-2 border-[#3c87ca] outline-none font-body' />
+            <input type="text" id='nama' placeholder='Nama' className='w-full py-1 px-3 mb-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body' />
+            <input type="email" id='email' placeholder='Email' className='w-full py-1 px-3 mb-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body' />
+            <input type="tel" id='telepon' placeholder='No Telepon' className='w-full py-1 px-3 mb-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body' />
+            <input type="text" id='perusahaan' placeholder='Perusahaan (Opsional)' className='w-full py-1 px-3 mb-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body' />
             <textarea
               id='pesan'
               placeholder='Pesan'
-              className='w-full h-32 py-1 px-3 mb-3 rounded-lg border-2 border-[#3c87ca] outline-none font-body placeholder-top transition-transform duration-300 ease-out focus:placeholder-translate-y-full'
+              className='w-full h-32 py-1 px-3 mb-3 rounded-lg border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body placeholder-top transition-transform duration-300 ease-out focus:placeholder-translate-y-full'
             />
           </form>
           <div className="mt-2">

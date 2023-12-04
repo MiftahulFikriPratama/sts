@@ -11,12 +11,11 @@ const Navbar = () => {
     { path: '/Landingpage', label: 'Beranda' },
     { path: '/kontak', label: 'Kontak' },
     { path: '/about', label: 'Tentang Kami' },
-    { path: '/FAQ', label: 'FAQ' },
-    { path: '/Pemandu', label: 'Pemandu Wisata' },
+    { path: '/PaketWisata', label: 'Paket Wisata' },
   ];
   return (
     <>
-    <nav  className= 'h-20 flex bg-white shadow-[0px_4px_4px_#3a86d4]' >
+    <nav  className= 'h-20 w-full flex bg-white shadow-[0px_4px_4px_#3a86d4]' >
         <div className='flex pl-10 items-center'>
           <img className='w-20 h-20 ' src={logo} alt="" />
         </div>

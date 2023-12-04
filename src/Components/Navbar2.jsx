@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from "../assets/Logo.png";
 import { FaRegUserCircle, FaRegUser } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
-import { FaRegStar } from "react-icons/fa";
 import { GrHistory } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
 
@@ -21,15 +20,14 @@ const Navbar2 = () => {
     { path: '/Landingpage', label: 'Beranda' },
     { path: '/kontak', label: 'Kontak' },
     { path: '/about', label: 'Tentang Kami' },
-    { path: '/FAQ', label: 'FAQ' },
-    { path: '/Pemandu', label: 'Pemandu Wisata' },
+    { path: '/PaketWisata', label: 'Paket Wisata' },
   ];
 
   return (
     <>
       <div className='fixed top-0 left-0 w-full h-20 flex bg-white z-[1000]'>
         <div className='w-60 h-screen bg-white'>
-          <div className='pl-10 pt-1 items-center'>
+          <div className='pl-10 items-center'>
             <img className='w-20 h-20' src={logo} alt="" />
           </div>
           <div className='w-full mt-10 flex flex-col items-center'>

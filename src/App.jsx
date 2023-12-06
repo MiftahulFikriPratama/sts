@@ -28,6 +28,7 @@ import Pembayaran from './Components/Pembayaran';
 import Konfirmasi from './Components/Konfirmasi';
 import Transaksi from './Components/Transaksi';
 import DetailTransaksi from './Components/DetailTransaksi';
+import NavbarAdmin from './Components/NavbarAdmin';
 
 const App = () => {
   return (
@@ -62,6 +63,7 @@ const App = () => {
           <Route path='/Konfirmasi' element={<Konfirmasi/>}/>
           <Route path='/Transaksi' element={<Transaksi/>} />
           <Route path='/DetailTransaksi' element={<DetailTransaksi/>} />
+          <Route path='/Navbaradmin' element={<NavbarAdmin/>}/>
         </Routes>
       </Router>
     </div>

@@ -46,7 +46,7 @@ const DetailPaket = () => {
             <li>Peserta Tour 04 – 06 Pax : Rp.350.000 / Orang</li>
             <li>Peserta Tour 07 – 11 Pax : Rp.300.000 / Orang</li>
             </div>
-            <a className='bg-[#3c87ca] py-2 px-8 rounded-md text-white font-body float-right mr-10 hover:bg-[#2A5E8D] ' href="/Pemesanan"><button>Booking Sekarang</button></a>
+            <a className='bg-[#3c87ca] py-2 px-8 rounded-md text-white font-body float-right mr-10 hover:bg-[#2A5E8D] ' href="/Pemesanan"><button>Pesan Sekarang</button></a>
         </div>
       </div>
         <Footer/>

@@ -29,6 +29,18 @@ import Konfirmasi from './Components/Konfirmasi';
 import Transaksi from './Components/Transaksi';
 import DetailTransaksi from './Components/DetailTransaksi';
 import NavbarAdmin from './Components/NavbarAdmin';
+import DataNonWisata from './Components/DataNonWisata';
+import DataWisata from './Components/DataWisata';
+import DataPaketWisata from './Components/DataPaketWisata';
+import DataPenggunaWisata from './Components/DataPenggunaWisata';
+import DataTransaksi from './Components/DataTransaksi';
+import Admin from './Components/Admin';
+import Destinasi from './Components/Destinasi';
+import TambahDataNonWisata from './Components/TambahDataNonWisata';
+import TambahDataWisata from './Components/TambahDataWisata';
+import TambahDataPaketWisata from './Components/TambahDataPaketWisata';
+import DetailTransaksiAdmin from './Components/DetailTransaksiAdmin';
+
 
 const App = () => {
   return (
@@ -64,6 +76,18 @@ const App = () => {
           <Route path='/Transaksi' element={<Transaksi/>} />
           <Route path='/DetailTransaksi' element={<DetailTransaksi/>} />
           <Route path='/Navbaradmin' element={<NavbarAdmin/>}/>
+          <Route path='/DataNonWisata' element={<DataNonWisata/>}/>
+          <Route path='/DataWisata' element={<DataWisata/>}/>
+          <Route path='/DataPaketWisata' element={<DataPaketWisata/>}/>
+          <Route path='/DataPenggunaWisata' element={<DataPenggunaWisata/>}/>
+          <Route path='/DataTransaksi' element={<DataTransaksi/>}/>
+          <Route path='/Admin' element={<Admin/>}/>
+          <Route path='/Destinasi' element={<Destinasi/>} />
+          <Route path='/TambahDataNonWisata' element={<TambahDataNonWisata/>}/>
+          <Route path='/TambahDataWisata' element={<TambahDataWisata/>}/>
+          <Route path='/TambahDataPaketWisata' element={<TambahDataPaketWisata/>}/>
+          <Route path='/DetailTransaksiAdmin' element={<DetailTransaksiAdmin/>}/>
+
         </Routes>
       </Router>
     </div>

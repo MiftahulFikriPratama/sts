@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from "../assets/Logo.png";
-import { FaRegUserCircle, FaRegUser } from "react-icons/fa";
-import { GrFavorite } from "react-icons/gr";
-import { GrHistory } from "react-icons/gr";
+import { FaRegUserCircle } from "react-icons/fa";
 import { BiLogOut } from "react-icons/bi";
 
 import { FaHome } from "react-icons/fa";
@@ -17,11 +15,11 @@ const NavbarAdmin = () => {
   const location = useLocation();
 
   const menuItems = [
-    { path: '/Dashboard', icon: <FaHome />, label: 'Dashboard' },
+    { path: '/Admin', icon: <FaHome />, label: 'Dashboard' },
     { path: '/Destinasi', icon: <IoLocation />, label: 'Destinasi' },
-    { path: '/PaketWisata', icon: <MdOutlineTour />, label: 'Paket Wisata' },
-    { path: '/Pengguna', icon: <FaUser />, label: 'Pengguna' },
-    { path: '/Transaksi', icon: <FaHistory />, label: 'Transaksi' },
+    { path: '/DataPaketWisata', icon: <MdOutlineTour />, label: 'Paket Wisata' },
+    { path: '/DataPenggunaWisata', icon: <FaUser />, label: 'Pengguna' },
+    { path: '/DataTransaksi', icon: <FaHistory />, label: 'Transaksi' },
     { path: '/Kontak', icon: <MdOutlineMailOutline />, label: 'Pesan Kontak' },
     { path: '/', icon: <BiLogOut />, label: 'Keluar' },
   ];
@@ -48,7 +46,7 @@ const NavbarAdmin = () => {
         </div>
         <div className='flex flex-grow justify-end items-center gap-6 pr-10'>
         <h1 className='font-body font-bold'>Admin</h1>
-          <Link to="/profil" className='text-4xl hover:text-[#3c87ca]'><FaRegUserCircle /></Link>
+          <Link to="/Admin" className='text-4xl hover:text-[#3c87ca]'><FaRegUserCircle /></Link>
         </div>
       </div>
 

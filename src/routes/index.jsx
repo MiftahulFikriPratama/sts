@@ -4,8 +4,8 @@ import Navbar2 from '../Components/Navbar2'
 import Navbar1 from '../Components/Navbar1';
 import About  from "../pages/home/About";
 import Kontak from "../pages/home/Kontak";
-import Login from '../pages/auth/Login';
-import Daftar from '../pages/auth/Daftar';
+import Login from '../pages/auth/login';
+import Daftar from '../pages/auth/daftar';
 import Notfound from '../pages/home/Notfound';
 import { Footer } from '../Components/Footer';
 import DetailWisata1 from '../pages/home/DetailWisata1';
@@ -40,16 +40,27 @@ import TambahDataWisata from '../pages/home/TambahDataWisata';
 import TambahDataPaketWisata from '../pages/home/TambahDataPaketWisata';
 import DetailTransaksiAdmin from '../pages/home/DetailTransaksiAdmin';
 
+import PublicRoutes from './PublicRoutes';
+import AuthRoutes from './AuthRoutes';
 
 const Routing = () =>{
+    const token = localStorage.getItem("Authorization");
+    const isLoggin = token === null ? false :true;
+
     return(
         <Routes>
         <Route path='/'>
-          <Route path="/" element={<Home />} />
+          <Route element={<PublicRoutes isLoggin={isLoggin} />}>
+              <Route path="/Login" element={<Login />} />
+              <Route path="/Daftar" element={<Daftar />} />
+          </Route>
+          <Route path='/' element={<AuthRoutes isLoggin={isLoggin} />}>
+              <Route path='/landingpage' element={<Landingpage/>} />
+          </Route>
+
+          <Route path="/Home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/kontak" element={<Kontak />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/daftar" element={<Daftar />} />
           <Route path='/footer' element={<Footer />} />
           <Route path='/DetailWisata1' element={<DetailWisata1/>} />
           <Route path='/DetailWisata2' element={<DetailWisata2/>} />
@@ -59,7 +70,6 @@ const Routing = () =>{
           <Route path='/DetailWisata6' element={<DetailWisata6/>} />
           <Route path="*" element={<Notfound />} />
           <Route path='/carousel' element={<Carousel/>} />
-          <Route path='/landingpage' element={<Landingpage/>} />
           <Route path='/Nonwisata' element={<NonWisata />} />
           <Route path='/Navbar2' element={<Navbar2 />} />
           <Route path='/Navbar1' element={<Navbar1 />} />

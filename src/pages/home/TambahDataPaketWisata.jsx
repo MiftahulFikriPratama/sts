@@ -1,7 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import foto from "../../assets/Image23.png";
+import axios from "axios";
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
+const axiosHandler = async (url, data) => await axios.post(url, data);
 
 const TambahDataWisata = () => {
+  
+  const navigate = useNavigate(); 
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+   
+  const onSubmit = async (data) => {
+    const value = {
+      nama_paket: data.nama_paket,
+      lama_kegiatan: data.lama_kegiatan,
+      destinasi_wisata: data.destinasi_wisata,
+      rangkaian_kegiatan: data.rangkaian_kegiatan,
+      fasilitas: data.fasilitas,
+      biaya: data.biaya,
+      rentang_harga: data.rentang_harga,
+    };
+
+    const statement = "http://localhost:7730/api/v1/TambahPaket";
+
+    try {
+      const response = await axiosHandler(statement, value);
+
+      Swal.fire({
+        icon: "success",
+        title: "Data Berhasil Ditambah",
+        text: "",
+      });
+       
+      reset();
+      navigate("/DataPaketWisata"); // Redirect to the login page after successful registration
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.response.data,
+      });
+
+    }
+  };
+
+
   return (
     <>
       <div className="flex w-full justify-center">
@@ -12,7 +57,7 @@ const TambahDataWisata = () => {
             </h2>
             <div className="px-10">
               <div className="w-full mt-5 flex flex-col items-center">
-                <form className="w-full font-body">
+                <form onSubmit={handleSubmit(onSubmit)} className="w-full font-body">
                   <label
                     htmlFor="Nama Paket"
                     className="block text-base font-medium text-black mb-1"
@@ -20,6 +65,7 @@ const TambahDataWisata = () => {
                     Nama Paket
                   </label>
                   <input
+                  {...register("nama_paket", { required: "Nama wajib diisi" })}
                     type="text"
                     id="nama"
                     className="w-full py-1 px-3 mb-3 rounded-md border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body"
@@ -32,6 +78,7 @@ const TambahDataWisata = () => {
                     Lama Kegiatan
                   </label>
                   <input
+                  {...register("lama_kegiatan", { required: "Nama wajib diisi" })}
                     type="text"
                     id="alamat"
                     className="w-full py-1 px-3 mb-3 rounded-md border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body"
@@ -39,9 +86,10 @@ const TambahDataWisata = () => {
                   <label
                     htmlFor="Deskripsi Wisata"
                     className="block text-base font-medium text-black mb-1">
-                    Deskripsi Wisata
+                    Destinasi Wisata
                   </label>
                   <textarea
+                  {...register("destinasi_wisata", { required: "Nama wajib diisi" })}
                     id="Deskripsi"
                     className="w-full h-32 py-1 px-3 mb-3 rounded-md border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body placeholder-top transition-transform duration-300 ease-out focus:placeholder-translate-y-full"
                   />
@@ -51,6 +99,7 @@ const TambahDataWisata = () => {
                     Rangkaian Kegiatan
                   </label>
                   <textarea
+                  {...register("rangkaian_kegiatan", { required: "Nama wajib diisi" })}
                     id="Rangkaian"
                     className="w-full h-32 py-1  mb-3 rounded-md px-3 border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body placeholder-top transition-transform duration-300 ease-out focus:placeholder-translate-y-full"
                   />
@@ -60,6 +109,7 @@ const TambahDataWisata = () => {
                     Fasilitas
                   </label>
                   <textarea
+                  {...register("fasilitas", { required: "Nama wajib diisi" })}
                     id="Fasilitas"
                     className="w-full h-32 py-1  mb-3 rounded-md px-3 border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body placeholder-top transition-transform duration-300 ease-out focus:placeholder-translate-y-full"
                   />
@@ -69,12 +119,25 @@ const TambahDataWisata = () => {
                     Biaya
                   </label>
                   <textarea
+                  {...register("biaya", { required: "Nama wajib diisi" })}
                     id="Biaya"
                     className="w-full h-32 py-1  mb-3 rounded-md px-3 border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body placeholder-top transition-transform duration-300 ease-out focus:placeholder-translate-y-full"
                   />
+                  <label
+                    htmlFor="Rentang Harga"
+                    className="block text-base font-medium text-black mb-1"
+                  >
+                    Rentang Harga
+                  </label>
+                  <input
+                  {...register("rentang_harga", { required: "Nama wajib diisi" })}
+                    type="text"
+                    id="nama"
+                    className="w-full py-1 px-3 mb-3 rounded-md border border-slate-300 focus:outline-none focus:border-[#3c87ca] focus:ring-1 focus:ring-[#3c87ca] font-body"
+                  />
                   <div className="float-right" >
                     <a className=" flex mt-10 -ml-32  rounded-md shadow-lg bg-[#3c87ca] hover:bg-[#2A5E8D] text-white py-2 px-4 font-body  " href="">
-                      <button>Simpan Data</button>
+                      <button type="submit">Simpan Data</button>
                     </a>
                   </div>
                 </form>

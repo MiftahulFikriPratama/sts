@@ -10,7 +10,7 @@ const Navbar = () => {
     { path: '/', label: 'Beranda' },
     { path: '/kontak', label: 'Kontak' },
     { path: '/about', label: 'Tentang Kami' },
-    { path: '/Login', label: 'Paket Wisata' },
+    { path: '/login', label: 'Paket Wisata' },
   ];
   return (
     <>
@@ -24,7 +24,7 @@ const Navbar = () => {
               {navItem.label}
             </Link>
           ))}
-          <button className=' font-body border-solid border-2 border-sky-500 px-4 rounded-2xl text-sky-500 font-bold hover:bg-sky-500 hover:text-white'><a href="/Login">Masuk</a></button>
+          <button className=' font-body border-solid border-2 border-sky-500 px-4 rounded-2xl text-sky-500 font-bold hover:bg-sky-500 hover:text-white'><a href="/login">Masuk</a></button>
         </div>
     </nav>
     </>

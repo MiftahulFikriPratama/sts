@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import element1 from "../../assets/Layer1.svg";
 import element2 from "../../assets/Layer2.svg";
 import logo from "../../assets/Logo.png";
@@ -9,12 +10,8 @@ import Swal from "sweetalert2";
 const axiosHandler = async (url, data) => await axios.post(url, data);
 
 const Daftar = () => {
+  const navigate = useNavigate(); 
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
-  const [isRegister, setRegister] = React.useState(false);
-
-  const formHandle = () => {
-    setRegister((prev) => !prev);
-  };
 
   const onSubmit = async (data) => {
     const value = {
@@ -24,17 +21,19 @@ const Daftar = () => {
       no_hp: data.no_hp,
     };
 
-    const statement = `http://localhost:7730/api/v1/${isRegister ? "Daftar" : "login"}`;
+    const statement = "http://localhost:7730/api/v1/Daftar"; // Replace with your registration endpoint
 
     try {
       const response = await axiosHandler(statement, value);
+
       Swal.fire({
         icon: "success",
-        title: "Berhasil",
-        text: response.data,
+        title: "Daftar Berhasil",
+        text: "Silahkan melakukan login.",
       });
-      reset(); // Reset form setelah berhasil
-      formHandle();
+
+      reset();
+      navigate("/Login"); // Redirect to the login page after successful registration
     } catch (error) {
       Swal.fire({
         icon: "error",
